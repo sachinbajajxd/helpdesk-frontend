@@ -24,7 +24,7 @@ const SignUp = () => {
     e.preventDefault();
     console.log(user);
     try {
-        const response = await axios.post("http://localhost:5000/api/signup", user);
+        const response = await axios.post("https://helpdesk-backend-mpzl.onrender.com/api/signup", user);
         console.log(response);
         toast.success("Signup successful, Login to continue");
         navigate("/login");

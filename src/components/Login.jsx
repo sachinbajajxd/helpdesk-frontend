@@ -24,7 +24,7 @@ const Login = () => {
     e.preventDefault();
     console.log(user);
     try {
-        const response = await axios.post("http://localhost:5000/api/login", user);
+        const response = await axios.post("https://helpdesk-backend-mpzl.onrender.com/api/login", user);
         console.log(response);
         toast.success("Login successful, Welcome to MyApp");
         localStorage.setItem("myapp-token", response.data.token);
